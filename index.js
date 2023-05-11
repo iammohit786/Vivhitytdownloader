@@ -80,8 +80,8 @@ async function downloadVideo(chatId, url) {
   }
 }
 
-// Listen for the /yt command
-bot.onText(/\/yt/, (msg) => {
+// Listen for the url
+bot.onText(msg) => {
   const chatId = msg.chat.id;
   const url = msg.text.split(" ")[1];
 
@@ -100,6 +100,6 @@ bot.onText(/\/start/, (msg) => {
     chatId,
     `Hey, I am vivek verma made by @vivekmohit. Use the following commands to use me! 
 
-/yt - Give any youtube link and TsuyuDL will download it for you.`
+/yt - Give any youtube link and this bot will download it for you.`
   );
 });
