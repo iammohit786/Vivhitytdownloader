@@ -81,7 +81,7 @@ async function downloadVideo(chatId, url) {
 }
 
 // Listen for the /viv command 
-bot.onText(/\/vivmsg) => {
+bot.onText(/\/viv/, (msg) => {
   const chatId = msg.chat.id;
   const url = msg.text.split(" ")[1];
 
