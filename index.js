@@ -80,8 +80,8 @@ async function downloadVideo(chatId, url) {
   }
 }
 
-// Listen for the /viv command 
-bot.onText(/\/viv/, (msg) => {
+// Listen for the /yt command 
+bot.onText(/\/yt/, (msg) => {
   const chatId = msg.chat.id;
   const url = msg.text.split(" ")[1];
 
